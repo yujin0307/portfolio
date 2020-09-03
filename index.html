@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>서유진입니다.</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+  
+    <style>
+      body{font-family: 'Noto Serif KR', serif;}
+
+  /*---------------------------------------메뉴바--------------------------------------------*/
+      
+      body>div{box-shadow: 3px 0px 4px grey;
+                padding-top: 0px;
+                margin-top: -10px;
+                position: fixed;
+                padding-bottom: 100%;
+                padding-right: 250px;}
+      a {text-decoration: none; color: black;}
+      nav{position: fixed; float: left;
+          list-style-type: none; 
+          margin-left: 0px; 
+          margin-top: 0px; 
+          color: black; 
+          }
+      nav:link {color:white;}
+      nav:visited {color:white;}
+      nav li {margin-left: 40px; padding-right: 1px; list-style-type:none; 
+              margin-bottom: 40px;}
+      nav li a:hover { color:#C6579A}
+      nav>img{margin:80px 50px 60px ; width: 120px;}
+
+/*------------------------------------------정보 기본-----------------------------------------*/
+
+      section{margin-left: 250px;}
+      section>div{background-color: black; margin:10px 10px 100px 10px;}
+      section>img{margin:10px}
+
+      article{margin:0px 0px 60px 10px;
+              background-color: #D9D9D6;
+              padding: 10px 10px;}
+
+      h3{border-left-style:solid; border-left-width:4px; border-left-color: #F5B6CD; padding-left: 10px;
+        font-size: 30px; color: black; margin:0px 10px 10px 0px;}
+
+/*-------------------------------------About-------------------------------------------------*/    
+      #About img{width: 150px;
+                  border-radius: 40%;}
+      #About table{margin-left: 30px}
+      #About tr p{margin-left: 30px}
+
+/*-------------------------------------skills-------------------------------------------------*/    
+
+     .logos>img{width:100px;border-radius: 30%;padding: 0px} 
+     .logos{display: inline-block;border-radius: 30%;box-shadow: 2px 2px 1px grey; margin:10px 10px 5px 10px;
+            background-color: white;}
+     h6{margin:10px 10px 10px 0px;font-size: 15px;}
+
+    </style>
+
+   
+    <script>
+      jQuery(document).ready(function($) {
+
+              $('.scroll').click(function(event){            
+                      event.preventDefault();
+                      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+              });
+      }); 
+
+    </script>
+
+
+
+      
+  </head>
+
+  <body>
+
+
+  <div>
+     <nav>
+      <img src="img/giveme.gif">
+      <ul class="mainmaue">
+        <li><a href="#About" class="scroll">About</a></li>
+        <li><a href="#Skills" class="scroll">Skills</a></li>
+        <li><a href="#Project" class="scroll">Project</a></li>
+        <li><a href="#Contact" class="scroll">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section>
+    <div>
+    <img src="img/tenor.gif"></div><br>
+    <article id='About'>
+      
+      <h3>ABOUT</h3>
+      <table>
+        <tr>
+          <td>
+            <img src="img/face.jpg">
+          </td>
+          <td><p>저는 서유진입니다.<br>
+              성공하고 싶은데 공부하긴 싫어용<br><p>
+          </td>
+        </tr>
+      </table>
+      
+    </article>
+    <article id='Skills'>
+      <h3>SKILLS</h3>
+      제대로 할 줄 아는건 없는데용ㅎㅎ<br>
+      <h6>Language</h6>
+      <div class="logos"><img src="img/c.png"></div>
+      <div class="logos"><img src="img/java.png"></div>
+      <div class="logos"><img src="img/python.png"></div>
+      <div class="logos"><img src="img/js.jpg"></div>
+
+      <h6>Web Skills</h6>
+      <div class="logos"><img src="img/html.jpg"></div>
+      <div class="logos"><img src="img/css.jpg"></div>
+      <div class="logos"><img src="img/js.jpg"></div>
+      <div class="logos"><img src="img/jquery.png"></div>
+
+      <h6>database</h6>
+      <div class="logos"><img src="img/sql.png"></div>
+      <div class="logos"><img src="img/mysql.png"></div>
+
+      <h6>etc</h6>
+      <div class="logos"><img src="img/arduino.png"></div>
+      <div class="logos"><img src="img/linux.PNG"></div>
+    </article>
+    <article id='Project'>
+      <h3>PROJECT</h3>
+      제대로 한 것도 없는데용ㅎㅎ<br>
+      <div>
+        홈페이지 제작<br>
+        <img src="img/1_crush.gif">
+      </div>
+      <div>
+        게임 제작
+      </div>
+      <div>
+        게임 제작
+      </div>
+      
+    </article>
+
+    <article id='Contact'>
+      <h3>CONTACT</h3>
+      E-mail : youjin030700@gmail.com<br>
+      Phone : 010 - 2782 - 1057
+
+
+      
+    </article>
+ </section>
+
+
+
+
+
+
+
+
+  
+   
+
+</html>
